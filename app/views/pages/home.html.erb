@@ -1,12 +1,14 @@
+
+<div class=text-center>
 <div class="wrapper-home">
-<div class="logo-banner text-center"> <%= image_tag "logo.png" %>
+<div class="logo-banner"> <%= image_tag "logo.png" %>
 </div>
 </div>
 
 <div class="products">
 <h1 >featured products</h1>
 
-<div class="featured-products text-center"></div>
+<div class="featured-products"></div>
 <% @products.each do |product| %>
 <ul class="product-card col-xs-3 list-unstyled "> <h3> <%= product.name %></h3>
 <li><%= image_tag "http://unsplash.it/100/100" %></li>
@@ -15,4 +17,5 @@
 <li><%= product.url %></li>
 <li> <%= link_to "show product", product_path(product) %></li></ul>
 <% end %>
+</div>
 </div>
