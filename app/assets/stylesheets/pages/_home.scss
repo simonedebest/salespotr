@@ -2,26 +2,39 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
-body{
+ body{
   background-color: lightgrey;
 }
 .wrapper-home{
-width: 100%;
-height: 300px;
-background: url(http://unsplash.it/2000/300);
+  width: 100%;
+  height: 300px;
+  background: url(http://unsplash.it/2000/300);
 }
 
 .product-card{
-width:200px;
-padding: 30px;
-margin: 10px;
-background-color: white;
-border-radius: 5px;
-text-decoration: none;
+  width:200px;
+  padding: 30px;
+  margin: 10px;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid gray;
 
 }
 .product-card h3{
-font-size: 20px;
-color: blue;
+  font-size: 20px;
+  color: blue;
 }
 
+.logo-banner{
+
+}
+
+.products{
+  text-decoration: none;
+  padding: 30px;
+}
+
+.without-margin{
+  margin: 0px;
+}
