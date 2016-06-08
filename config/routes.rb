@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   resource :account, only: [:show, :edit, :update]
 
-  namespace :owner do
+  namespace :merchant do
     resources :products
   end
 
