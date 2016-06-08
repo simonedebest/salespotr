@@ -1,4 +1,16 @@
 <div class="wrapper-home">
 
-
+<img src="../assets/images/logo.png" alt="logo">
 </div>
+
+
+<h1>featured products</h1>
+
+<div class="featured-products text-center"></div>
+<% @products.each do |product| %>
+<ul class="product-card col-xs-3 "> <h3> <%= product.name %></h3>
+<li><%= product.description %></li>
+<li><%= product.price %></li>
+<li><%= product.url %></li>
+<li> <%= link_to "show product", product_path(product) %></li></ul>
+<% end %>
