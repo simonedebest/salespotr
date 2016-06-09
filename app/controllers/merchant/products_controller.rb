@@ -14,7 +14,7 @@ class Merchant::ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new(params.require(:product).permit(:name))
+    @product = Product.new(params.require(:product).permit(:name, :description, :price, :url))
     @product.save!
     redirect_to product_path(@product)
   end
