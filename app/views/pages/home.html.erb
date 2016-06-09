@@ -10,11 +10,11 @@
 
 <div class="featured-products"></div>
 <% @products.each do |product| %>
-<ul class="product-card col-xs-3 list-unstyled "> <h3> <%= product.name %></h3>
-<li><%= image_tag "http://unsplash.it/100/100" %></li>
-<li><%= product.description %></li>
-<li><%= product.price %></li>
-<li><%= product.url %></li>
+<ul class="product-card col-xs-3 list-unstyled "> <%= image_tag "http://unsplash.it/250/100" %>
+<li><hr></li>
+<li><h3> <%= product.name %> | <%= product.description %> </h3> </li>
+<li> € <%= product.price %></li>
+<li><a class="card-btn"><%= product.url %></a></li>
 <li> <%= link_to "show product", product_path(product) %></li></ul>
 <% end %>
 </div>
