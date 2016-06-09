@@ -1,20 +1,25 @@
 
 <div class=text-center>
   <div class="wrapper-home">
-
     <div class="logo-banner"> <%= image_tag "logo.png" %>
     </div>
   </div>
 </div>
-
-<div class="categories-home content-center">
+<br>
+<div class="categories-home text-center">
   <div class="container">
     <div class="row">
-      <div class="cat-card col-xs-12 col-sm-4"> man </div>
-      <div class="cat-card col-xs-12 col-sm-4"> woman </div>
-      <div class="cat-card col-xs-12 col-sm-4"> kids </div>
+      <div class="col-xs-12 col-sm-4">
+      <div class="cat-card1"> <h1>man</h1> </div>
+     </div>
+     <div class="col-xs-12 col-sm-4">
+      <div class="cat-card2">  <h1>woman</h1> </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="cat-card3">  <h1>kids</h1> </div>
     </div>
   </div>
+</div>
 </div>
 
 <div class="products">
@@ -32,9 +37,8 @@
           <li><a class="card-btn"><%= product.url %></a></li>
           <li> <%= link_to "show product", product_path(product) %></li>
         </ul>
-      <% end %>
+        <% end %>
       </div>
-
     </div>
   </div>
 </div>
