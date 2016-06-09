@@ -1,5 +1,6 @@
 class Merchant::ProductsController < ApplicationController
-  skip_before_action :authenticate_user!, only:[ :index, :show, :new, :create ]
+  include DeviseCreateUsers::MerchantsHelper
+  before_action :check_merchant, only:[ :new, :create ]
 
   def index
     @products = Product.all
