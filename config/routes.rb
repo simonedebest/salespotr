@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'users/registrations' }
   root to: 'pages#home'
 
-  resources :products, only: [:index, :show] do
+  resources :products, only: [:index, :show, :create] do
     resources :reviews, only: [:new, :create]
   end
 
@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   namespace :merchant do
     resources :products
   end
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
