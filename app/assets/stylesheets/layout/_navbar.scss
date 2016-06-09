@@ -1,14 +1,14 @@
 /* Main class */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: #f0a28e;
+  background: #222831;
   transition: all 0.3s ease;
   display: flex;
   height: 60px;
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #ba6476;
+  border-bottom: 2px solid #393e46;
 }
 
 /* Optional class to fix the navbar on top */
@@ -41,18 +41,18 @@
 
 /* Navbar standard link */
 .navbar-wagon-link {
-  color: #ba6476;
+  color: #00adb5;
   font-size: 14px;
   padding: 5px 20px;
-  border: 2px solid #ba6476;
+  border: 2px solid #00adb5;
   transition: 0.3s
 }
 .navbar-wagon-link:hover {
-  color: #f0a28e;
+  color: #222831;
   text-decoration: none;
-  background-color: #ba6476;
+  background-color: #00adb5;
   padding: 5px 20px;
-  border: 2px solid #ba6476;
+  border: 2px solid #00adb5;
 }
 
 /* Navbar right button */
@@ -84,7 +84,7 @@
 }
 .navbar-wagon-search-btn {
   line-height: 35px;
-  color: #ba6476;
+  color: #00adb5;
   border: none;
   background: transparent;
   position: absolute;
@@ -98,15 +98,15 @@
   transition: all 0.15s ease;
   line-height: 35px;
   font-weight: lighter;
-  color: #ba6476;
+  color: #00adb5;
   border: 0px;
-  border-bottom: 2px solid #ba6476;
+  border-bottom: 2px solid #00adb5;
   padding: 0 10px;
   font-size: 14px;
   outline: none;
 }
 .navbar-wagon-search-input:focus  {
-  border-bottom: 2px solid #ba6476;
+  border-bottom: 2px solid#00adb5;
 }
 
 /* Navbar dropdown menu */
