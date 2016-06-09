@@ -1,21 +1,27 @@
 
 <div class=text-center>
-<div class="wrapper-home">
-<div class="logo-banner"> <%= image_tag "logo.png" %>
-</div>
-</div>
+  <div class="wrapper-home">
+    <div class="logo-banner">
+    <%= image_tag "logo.png" %>
+    </div>
+  </div>
 
-<div class="products">
-<h1 >featured products</h1>
+  <div class="products">
+    <h1 >featured products</h1>
 
-<div class="featured-products"></div>
-<% @products.each do |product| %>
-<ul class="product-card col-xs-3 list-unstyled "> <%= image_tag "http://unsplash.it/250/100" %>
-<li><hr></li>
-<li><h3> <%= product.name %> | <%= product.description %> </h3> </li>
-<li> € <%= product.price %></li>
-<li><a class="card-btn"><%= product.url %></a></li>
-<li> <%= link_to "show product", product_path(product) %></li></ul>
-<% end %>
-</div>
+    <div class="featured-products"></div>
+    <div class="container">
+    <div class="row">
+    <% @products.each do |product| %>
+    <ul class="product-card col-xs-3 list-unstyled "> <%= image_tag "http://unsplash.it/250/100" %>
+      <li><hr></li>
+      <li><h3> <%= product.name %> | <%= product.description %> </h3> </li>
+      <li> € <%= product.price %></li>
+      <li><a class="card-btn"><%= product.url %></a></li>
+      <li> <%= link_to "show product", product_path(product) %></li>
+    </ul>
+    <% end %>
+    </div>
+    </div>
+  </div>
 </div>
