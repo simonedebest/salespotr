@@ -10,17 +10,32 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-      <div class="cat-card1"> <h1>man</h1> </div>
-      <%= link_to "Men", products_path(gender: 0) %>
+       <%= link_to products_path(gender: 0) do %>
+       <div class="cat-card1">  <h1>men</h1> </div>
+       <% end %>
      </div>
+
      <div class="col-xs-12 col-sm-4">
+      <%= link_to products_path(gender: 1) do %>
       <div class="cat-card2">  <h1>woman</h1> </div>
-      <%= link_to "Women", products_path(gender: 1) %>
+      <% end %>
     </div>
+
     <div class="col-xs-12 col-sm-4">
+      <%= link_to products_path(gender: 2) do %>
       <div class="cat-card3">  <h1>kids</h1> </div>
-      <%= link_to "Kids", products_path(gender: 2) %>
+      <% end %>
     </div>
   </div>
 </div>
+
+<br>
+
+<form action="" class="home-search text-center">
+  <input type="text" class="home-search-input" placeholder="Search something">
+  <button type="submit" class="home-search-btn">
+    <i class="fa fa-search"></i>
+  </button>
+</form>
 </div>
+<br>

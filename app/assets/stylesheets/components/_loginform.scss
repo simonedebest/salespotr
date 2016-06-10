@@ -1,14 +1,7 @@
-.fromstyle input{
+.login-form-input {
   background-color: transparent;
   border-bottom: 2px solid #393e46;
 }
-
-.fromstyle input:focus{
-  border-bottom: 2px solid #393e46;
-}
-
-
-
 
 .fromstyle{
   margin: 20px;
@@ -21,5 +14,5 @@
 }
 
 .signup:a{
-color: #393e46;
+  color: #393e46;
 }
