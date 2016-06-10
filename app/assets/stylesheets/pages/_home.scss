@@ -10,7 +10,7 @@
 
 
 .cat-card1{
-  background: linear-gradient(-225deg, rgba(0,101,168,0.5) 0%, rgba(0,36,61,0.5) 50%), url('man-cat.jpg');
+  background: linear-gradient(-225deg, rgba(0,101,168,0.5) 0%, rgba(0,36,61,0.5) 50%), image-url('man-cat.jpg');
   background-size: cover;
   zoom: 0.3;
   height: 300px;
@@ -19,7 +19,7 @@
 }
 
 .cat-card2{
-  background: linear-gradient(-225deg, rgba(0,101,168,0.5) 0%, rgba(0,36,61,0.5) 50%), url('women-cat.jpg');
+  background: linear-gradient(-225deg, rgba(0,101,168,0.5) 0%, rgba(0,36,61,0.5) 50%), image-url('women-cat.jpg');
   background-size: cover;
   line-height: 300px;
   height: 300px;
@@ -28,7 +28,7 @@
 }
 
 .cat-card3{
-  background: linear-gradient(-225deg, rgba(0,101,168,0.5) 0%, rgba(0,36,61,0.5) 50%), url('kid-cat.jpg');
+  background: linear-gradient(-225deg, rgba(0,101,168,0.5) 0%, rgba(0,36,61,0.5) 50%), image-url('kid-cat.jpg');
   background-size: cover;
   line-height: 300px;
   height: 300px;
