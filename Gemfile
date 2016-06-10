@@ -7,6 +7,7 @@ gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'redis'
 gem 'devise'
+gem 'omniauth-facebook'
 
 gem 'sass-rails'
 gem 'jquery-rails'
@@ -30,4 +31,5 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'puma'
+  gem 'figaro'
 end
