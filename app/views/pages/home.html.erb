@@ -11,12 +11,15 @@
     <div class="row">
       <div class="col-xs-12 col-sm-4">
       <div class="cat-card1"> <h1>man</h1> </div>
+      <%= link_to "Men", products_path(gender: 0) %>
      </div>
      <div class="col-xs-12 col-sm-4">
       <div class="cat-card2">  <h1>woman</h1> </div>
+      <%= link_to "Women", products_path(gender: 1) %>
     </div>
     <div class="col-xs-12 col-sm-4">
       <div class="cat-card3">  <h1>kids</h1> </div>
+      <%= link_to "Kids", products_path(gender: 2) %>
     </div>
   </div>
 </div>

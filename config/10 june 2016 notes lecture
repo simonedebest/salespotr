@@ -1,0 +1,15 @@
+has many reviews, dependent destroy
+
+class Review < ActiveRecord::Base
+  belongs_to :restaurant
+  validates :content, length: {minimum: 20}
+end
+
+Restaurant.create({name: 'FEBO', address: 'Avenida da Liberdade, Lisbon'})
+
+Review.create({content: 'This is great when I am drunk!!!', restaurant_id: 1})
+
+use pluralize for one or more review/reviews
+
+<%= pluralize @restaurant.name %>
+
