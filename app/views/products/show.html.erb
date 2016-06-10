@@ -9,7 +9,6 @@
 
 <!-- app/views/restaurants/show.html.erb -->
 <h1><%= @product.name %></h1>
-<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x300&sensor=false&maptype=roadmap&markers=color:red|#{@product.description}" %>
 <h2>
   <%= pluralize @product.reviews.size, "review" %>
 </h2>

@@ -4,9 +4,15 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.product = @product
     if @review.save
-      redirect_to product_path(@product)
+      respond_to do |format|
+        format.html { redirect_to product_path(@product) }
+        format.js  # <-- will render `app/views/reviews/create.js.erb`
+      end
     else
-      render 'products/show'
+      respond_to do |format|
+        format.html { render 'product/show' }
+        format.js  # <-- idem
+      end
     end
   end
 
@@ -16,3 +22,4 @@ class ReviewsController < ApplicationController
     params.require(:review).permit(:content)
   end
 end
+
